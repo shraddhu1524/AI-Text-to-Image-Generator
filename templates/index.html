@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>AI Image Generator</h1>
+        <p>Turn your imagination into beautiful AI images</p>
+    </header>
+
+    <main class="container">
+
+        <section class="generator-card">
+
+            <h2>Create Your Image</h2>
+
+            <p>Describe the image you want to generate.</p>
+
+            <textarea
+                id="prompt"
+                placeholder="Example: A beautiful futuristic city at sunset..."
+                maxlength="1000"
+                required></textarea>
+
+            <button id="generateBtn" onclick="generateImage()">
+                Generate Image
+            </button>
+
+            <p id="status"></p>
+
+            <div id="result" class="result">
+                <img id="generatedImage" alt="AI generated image">
+
+                <a id="downloadBtn"
+                   href="#"
+                   download="AI_Generated_Image.png">
+                    Download Image
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AI Text-to-Image Generator | MCA AI Project</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

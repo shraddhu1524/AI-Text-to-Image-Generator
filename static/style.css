@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #d1d5db;
+}
+
+.container {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.generator-card {
+    background: white;
+    color: #222;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.generator-card h2 {
+    margin-bottom: 12px;
+}
+
+.generator-card p {
+    margin-bottom: 18px;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: #6c4ce4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5135c4;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#status {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.result {
+    display: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.result img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+#downloadBtn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #159957;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #d1d5db;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .generator-card {
+        padding: 20px;
+    }
+}
